@@ -1,47 +1,31 @@
 # Handwritten Number Recognizer
 
-Welcome to the Handwritten Number Recognizer project! This project leverages the power of deep learning to identify handwritten digits from the MNIST dataset, achieving high accuracy through a carefully designed neural network architecture.
+## Project Overview
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Dataset](#dataset)
-- [Model Architecture](#model-architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Future Work](#future-work)
-- [License](#license)
-
-## Overview
-
-The goal of this project is to build an effective model that can accurately recognize handwritten digits from images. Using a convolutional neural network (CNN), we aim to classify each image into one of the ten digit categories (0-9).
+The **Handwritten Number Recognizer** is a machine learning project designed to accurately identify handwritten digits from the MNIST dataset, which consists of 70,000 images of handwritten numbers (0-9). This project employs deep learning techniques, specifically convolutional neural networks (CNNs), to train a model that can classify the digits with high accuracy.
 
 ## Dataset
 
-The model is trained on the MNIST dataset, which consists of 60,000 training images and 10,000 test images of handwritten digits. Each image is a 28x28 pixel grayscale image.
+The MNIST dataset contains 60,000 training images and 10,000 test images, each 28x28 pixels in grayscale. The dataset is widely used in the field of machine learning and serves as a benchmark for evaluating the performance of various algorithms in image recognition.
 
-### Dataset Source
-- [MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
+## Objectives
 
-## Model Architecture
+- To develop a robust model that can recognize handwritten digits with high accuracy.
+- To explore various model architectures and hyperparameters to optimize performance.
+- To visualize the model's performance through accuracy and loss graphs.
 
-The architecture of the model includes:
+## Key Features
 
-- **Convolutional Layers**: Extracts features from the input images.
-- **Max Pooling Layers**: Reduces the dimensionality of the feature maps.
-- **Fully Connected Layers**: Performs the final classification of the features.
+- **Data Preprocessing**: The raw images are preprocessed to enhance model performance. This includes normalization, resizing, and reshaping of image data.
+- **Model Architecture**: A Convolutional Neural Network (CNN) is implemented to learn features from the images and classify them into one of ten categories (0-9).
+- **Training & Evaluation**: The model is trained on the training set and evaluated on the test set, with metrics such as accuracy and loss recorded throughout the process.
+- **Visualization**: Graphs displaying training and validation accuracy and loss are generated to analyze model performance and identify potential overfitting.
 
-### Key Libraries Used
-- TensorFlow
-- Keras
-- NumPy
-- Matplotlib
+## Getting Started
 
-## Installation
-
-To run this project, you will need to install the following dependencies:
+To get started with the Handwritten Number Recognizer, clone this repository and install the necessary dependencies:
 
 ```bash
-pip install tensorflow keras numpy matplotlib
-
+git clone <repository-url>
+cd handwritten-number-recognizer
+pip install -r requirements.txt
